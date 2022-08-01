@@ -1,0 +1,419 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+  }
+ @font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+ } 
+ @font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+ }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+* {
+    box-sizing: border-box;
+  }
+.nav-bar{
+    width: 100%;
+    height: 6.7%;
+    background-color: #F9F8FD;
+    padding-left: 5%;
+    padding-right: 5%;
+       
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+ a,a:visited {
+    text-decoration: none;
+  }
+.nav-bar li{
+    padding: 0.313rem 0.625rem;
+    list-style: none;
+}
+#nav-search-cont{
+    margin-left: auto;
+    padding-top: 1rem;
+    width: 25%;
+}
+#logo{
+    Width: 3.75rem;
+    height: 3.75rem;
+    
+}
+#text-logo{
+    Size: 2rem;
+    line-height: 1.8rem;
+    font-weight: 900;
+    font-family: lato;
+    color: #2A156C;
+    
+}
+#nav-search{
+    
+    width:100%;
+    padding: 0.75rem 1.25rem;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 0.063rem solid #E5E5E5;
+    border-radius: 0.75rem;
+    background-image: url("images/search-icon.svg");
+    background-size: 0.875rem 0.875rem;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+#nav-search:focus{
+    background-image: none;
+
+}
+#nav-profile-picture,#nav-notification-icon{
+    padding-top: 1.25rem;
+}
+#nav-left-username-cont{
+    padding-left: 0;
+}
+#container-nav-notification-icon{
+    position: relative;
+   
+}
+#red-notification{
+    position: absolute;
+    left: 0.563rem;
+    top: 1.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #FF002F;
+    border-radius: 100%;
+}
+#nav-user-name{
+    padding-top: 0.313rem;
+    font-family: 'Nunito';
+     font-style: normal;
+    font-weight: 400;
+   font-size: 1rem;
+    line-height: 1.375rem;
+    color: #000000;
+    
+}
+.main-container{
+    height: 93.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.left-menu{
+    width: 25%;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    font-family: nunito;
+    font-weight: 400;
+    }
+.left-menu-upper{
+    padding-top: 1rem;
+    height: 50%;
+} 
+.left-menu-bottom{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+}   
+.left-menu-items{
+    display: flex;
+    width: 100%;
+    padding: 0.313rem;
+}
+
+.left-menu-item-left{
+    
+    width: 25%; 
+    padding: 1rem 0 0 10%;
+
+}
+.left-menu-midle-items{
+    padding-left: 0.063rem;
+}
+
+.left-menu-paraagraph{
+    color: #716161;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+     font-size: 1.125rem;
+     line-height: 1.563rem;
+     padding: 0 0.5rem;
+}
+
+.left-menu-paragraph-right{
+    margin-left: auto;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #716161; 
+    padding: 0 0.5rem;
+    margin-right: 5%;
+
+}
+#left-menu-paragraph-right-notification{
+    background-size: 0.313rem;
+    background-color: #039DF3;
+    border-radius: 50%;
+    padding: 0.313rem;
+    color: #FFFFFF;
+}
+.drone-icon{
+    padding-top: 0.313rem;
+    width: 1.25rem;
+}
+.right-body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.right-body-upper-container{
+    width: 23%;
+    margin:4% 0 0 2%;
+    padding: 2rem;
+    background: rgba(47, 47, 47, 0.8);
+     backdrop-filter: blur(0.25rem);
+    font-family: 'Nunito';
+    font-style: normal;
+    color: #FFFFFF;
+    border-radius: 1.625rem;
+    position: absolute;
+    z-index: 1;
+     
+   
+}
+#map{
+     position: relative;
+    
+}
+
+.right-body-upper-container-title-icons-individual{
+        display: flex;
+        flex-direction: column;
+
+}
+.right-body-upper-container-title-icons-individual-image{
+    display: flex;
+    justify-content: center;
+}
+.right-body-upper-container-title-icons{
+        position: absolute;
+        top: -0.938rem;
+        display: flex;
+        width: calc(100% - 4rem);  
+        justify-content: space-between;
+    
+}
+.title-icons-bar{
+    background-color: #E5E5E5;
+    padding: 0.313rem;
+    border-radius: 50%;
+    width: 2.5rem;
+
+}
+.title-icons-bar:hover{
+    border:solid 0.125rem #039DF3;
+}
+.right-body-upper-container-body-cont{
+    padding-top: 2rem;
+}
+.right-body-upper-container-title{  
+    text-align: center;
+}
+.right-body-upper-container-body-cont-normal-bar{
+    display: flex;
+}
+.right-body-upper-container-body-cont-normal-bar-left{
+    width: 60%;
+}
+.right-body-upper-container-body-cont-normal-bar-right{
+    display: flex;
+    margin-left: auto;
+    width: 40%;
+}
+.activity-light{
+    margin-top: 1.375rem;
+    position: absolute;
+    left:0.938rem;
+
+}
+.additional-inner-cont{
+    display: flex;
+    gap: 1.5rem;
+}
+.right-body-upper-container-body-cont-normal-bar-right-up-icon{
+    padding: 0.5rem;
+    padding-top: 0.75rem;
+}
+.up-icon{
+    
+    width: 0.5rem;
+    height:0.5rem;
+    transition-duration: 5s;
+    
+}
+#special-cont2,#special-cont3{
+    display: none;
+}
+.right-upper-body-special-paragraph{
+    color:#C7B4B4;
+    
+}
+.right-upper-body-special-paragraph-2{
+    margin-block: 0.5rem;
+}
+.change-color-span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 0.5rem;
+    color: #FFE100;
+    margin-top: 2px;
+}
+.infunction{
+    color: #1ECD25;
+}
+.right-upper-body-special-paragraph-3{
+  margin-top: 0;
+  
+}
+.right-upper-body-special-paragraph-4{
+    margin-bottom: 0;
+}
+.right-upper-body-special-paragraph-container{
+    display: flex;
+}
+.body-container-liner{
+    border-top:  0.063rem solid #716161;
+    
+}
+
+.right-body-bottom{
+        margin-bottom: 3%;
+        display: flex;
+        gap: 2rem;
+        padding-inline: 3%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+}
+.right-body-bottom-containers-left{
+    padding-inline: 3%;
+    padding-block: 1%;
+    background: #FFFFFF;
+    border: 0.063rem solid #E5E5E5;
+    box-shadow: 0px 1.25rem 1.25rem rgba(196, 196, 196, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+    width: 17%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+
+
+color: #2F2F2F;
+
+}
+.right-body-bottom-container-left-inner-left-cont{
+    justify-content: center;
+   
+}
+.right-body-bottom-containers-left-inner-right-cont{
+    margin-left: auto;
+    padding-inline:8% ;
+    
+}
+.right-body-bottom-containers-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    background: #FFFFFF;
+    padding: 0.5rem;
+    border: 0.063rem solid #E5E5E5;
+    box-shadow: 0 1.25rem 1.25rem rgba(196, 196, 196, 0.1);
+    border-radius: 0.5rem;
+}
+.right-body-bottom-containers-right-icon{
+    width: 2rem;
+    border-radius: 0.5rem;
+}
+.right-body-bottom-containers-right-icon2{
+    padding-top: 0.313rem;
+}
+.right-body-bottom-special-paragraph{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+.right-body-bottom-containers-right-div{
+    border-top: solid 0.063rem #C4C4C4;
+    
+}
+.right-body-bottom-containers-left1{
+     background-image: url("images/airplane.png");
+     background-size: 3.125rem;
+    background-repeat: no-repeat;
+    background-position: 95% 90%;
+     
+}
+.right-body-bottom-containers-left2{
+    background-image: url("images/pending.png");
+    background-size:3.125rem;
+   background-repeat: no-repeat;
+   background-position: 95% 90%;
+}
+.right-body-bottom-containers-left3{
+    background-image: url("images/accepted.png");
+    background-size: 2.5rem;
+   background-repeat: no-repeat;
+   background-position: 95% 90%;
+}
+@media all and (max-width:95.313rem){
+    .right-body-upper-container {
+        width: 30%;}
+}
+
+@media all and (max-width:64rem){
+  
+    .right-body-upper-container {
+        width: 30%;}
+    .right-upper-body-special-paragraph-container{
+        flex-direction: column;
+    }
+    .right-upper-body-special-paragraph-3{
+        margin-bottom: 0;
+    }
+    .change-color-span{
+        margin-top: 0;
+        margin-left: 0;
+    }
+   
+}
+@media all and (max-width:60rem){
+    .right-body-upper-container {
+        width: 33%;}
+          .left-menu{
+        display: none;
+    }
+     /*create menu button*/
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RID.css">
+    <script src="RID.js"></script>
+    
+    <title>RID Dashboard</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#"><img src="images/logo.svg" alt="logo" id="logo"></a>
+            </li>
+            <li>
+                <a href="#"><p id="text-logo">UAS RID</p></a>
+            </li>
+            <li id="nav-search-cont">
+                <input type="search" placeholder="search by drone id" id="nav-search">
+            </li>
+            <li>
+                <div id="container-nav-notification-icon">
+                <a href="#"><img src="images/Icon.svg" alt="notification" id="nav-notification-icon"></a>
+                <img src="images/red notification.png" id="red-notification"></li>
+            </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/user.svg" alt="user" id="nav-profile-picture"></a>
+             </li>   
+            <li id="nav-left-username-cont" >
+                <a href="#"><p id="nav-user-name">john peter</p></a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-container">
+   
+   
+          <div class="left-menu">
+            <div class="left-menu-upper">
+                <div class="left-menu-items" >
+                    <div class="left-menu-item-left">
+                        <img src="images/dashboard.svg">
+                    </div>
+                    <div class="left-menu-midle-items" >
+                        <a href="#"><p class="left-menu-paraagraph"id="x1">Dashboard</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-menu-items" >
+                    <div class="left-menu-item-left">
+                        <img src="images/home.svg">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#"><p class="left-menu-paraagraph">Home</p></a></div>
+                </div>
+                <div class="left-menu-items" >
+                    <div class="left-menu-item-left">
+                        <img src="images/drone.png" class="drone-icon">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#">
+                        <p class="left-menu-paraagraph">Drones</p>
+                          </a>
+                     </div>
+                     <div class="left-menu-paragraph-right">
+                        <p >21</p>
+                    </div>
+                </div>
+                <div class="left-menu-items">
+                    <div class="left-menu-item-left">
+                        <img src="images/pilot.svg">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#"><p class="left-menu-paraagraph">Pilots</p>
+                        </a>
+                    </div>
+                    <div class="left-menu-paragraph-right">
+                        <p>33</p>
+                    </div>
+                </div>
+                <div class="left-menu-items" >
+                    <div class="left-menu-item-left">
+                        <img src="images/Icon.svg">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#"><p class="left-menu-paraagraph">Notification</p>
+                        </a>
+                    </div>
+                    <div class="left-menu-paragraph-right">
+                        <p id="left-menu-paragraph-right-notification">21</p>
+                    </div>
+                </div>
+                <div class="left-menu-items" >
+                    <div class="left-menu-item-left">
+                        <img src="images/danger.svg">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#"><p class="left-menu-paraagraph">Emergency</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="left-menu-bottom">
+                <div class="left-menu-items" id="left-menu-item-left-logout">
+                    <div class="left-menu-item-left" >
+                        <img src="images/logout.svg">
+                    </div>
+                    <div class="left-menu-midle-items">
+                        <a href="#"><p class="left-menu-paraagraph">Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+          <div class="right-body" id="map" >
+            <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2BGC4m3GDW-Qob_DH5D7cK35HgsZn-1c&callback=initMap&v=weekly">
+                    </script>
+                <div class="right-body-upper-container">   
+                    <div class="right-body-upper-container-title-icons">
+                        <div class="right-body-upper-container-title-icons-individual" >
+                            <div class="right-body-upper-container-title-icons-individual-image">
+                                <img src="images/drone.png" class="drone-icon title-icons-bar ">
+                            </div>
+                            
+                            <p class="right-upper-body-special-paragraph-2">Drones</p>
+                        </div>
+                        <div class="right-body-upper-container-title-icons-individual">
+                            <div class="right-body-upper-container-title-icons-individual-image">
+                                <img src="images/vision.png" class="drone-icon title-icons-bar ">
+                            </div>
+                            <p class="right-upper-body-special-paragraph-2">Mission</p>
+                        </div>
+                        <div class="right-body-upper-container-title-icons-individual">
+                            <div class="right-body-upper-container-title-icons-individual-image">
+                                <img src="images/cloud-data.png" class="drone-icon title-icons-bar " >
+                            </div>
+                            <p class="right-upper-body-special-paragraph-2">Data</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-body-upper-container-body-cont">
+                        
+                        <div class="right-body-upper-container-title"><p>Drones</p></div>
+                        <div class="right-body-upper-container-body-cont-normal-bar">
+                            <div class="right-body-upper-container-body-cont-normal-bar-left">
+                                <img src="images/Ellipse 27.png" class="activity-light">
+                                <p class="right-upper-body-special-paragraph-4" >Drone 2</p>
+                                <div class="right-upper-body-special-paragraph-container">
+                                    <p class="right-upper-body-special-paragraph-3">status:</p>
+                                    <p class="change-color-span">need help</p>
+                                </div>
+                                
+                            </div>
+                            <div class="right-body-upper-container-body-cont-normal-bar-right">
+                                <div><p>ID:NI B0258</p></div>  
+                                <div class="right-body-upper-container-body-cont-normal-bar-right-up-icon">
+                                    <a href="#"><img src="images/down-icon.png" class="up-icon" id="btn-1"></a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                            <div class="right-body-upper-container-body-cont-normal-bar-additional " id="special-cont1" data-position="open">
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">Drone health</p>
+                                        <div class="additional-inner-cont">
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                    <img src="images/gps.png">
+                                                </div>  
+                                                <p class="right-upper-body-special-paragraph-2"></p>GPS</p>
+                                            </div>
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                <img src="images/gps.png">
+                                            </div>
+                                                
+                                                <p class="right-upper-body-special-paragraph-2">WIFI</p>
+                                            </div>
+                                        </div>
+                                </div> 
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">current status</p>
+                                       <div class="additional-inner-cont">
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">5 m/s</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">speed</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">180 m </p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">altitude</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">76%</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">power</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="right-body-upper-container-body-cont-normal-bar body-container-liner">
+                                
+                                <div class="right-body-upper-container-body-cont-normal-bar-left">
+                                    <img src="images/Ellipse 27.png" class="activity-light">
+                                    <p class="right-upper-body-special-paragraph-4" >Drone 3</p>
+                                    <div class="right-upper-body-special-paragraph-container">
+                                        <p class="right-upper-body-special-paragraph-3">status:</p>
+                                        <p class="change-color-span infunction">In function</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="right-body-upper-container-body-cont-normal-bar-right">
+                                    <div><p>ID:NI B0258</p></div>  
+                                    <div class="right-body-upper-container-body-cont-normal-bar-right-up-icon">
+                                        <a href="#"><img src="images/up-icon.png" class="up-icon" id="btn-2" ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-body-upper-container-body-cont-normal-bar-additional " id="special-cont2" data-position="closed">
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">Drone health</p>
+                                        <div class="additional-inner-cont">
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                    <img src="images/gps.png">
+                                                </div>  
+                                                <p class="right-upper-body-special-paragraph-2"></p>GPS</p>
+                                            </div>
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                <img src="images/gps.png">
+                                            </div>
+                                                
+                                                <p class="right-upper-body-special-paragraph-2">WIFI</p>
+                                            </div>
+                                        </div>
+                                </div> 
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">current status</p>
+                                       <div class="additional-inner-cont">
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">5 m/s</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">speed</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">180 m </p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">altitude</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">76%</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">power</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="right-body-upper-container-body-cont-normal-bar body-container-liner">
+                               
+                                <div class="right-body-upper-container-body-cont-normal-bar-left">
+                                    <img src="images/Ellipse 27.png" class="activity-light">
+                                    <p class="right-upper-body-special-paragraph-4" >Drone 4</p>
+                                    <div class="right-upper-body-special-paragraph-container">
+                                        <p class="right-upper-body-special-paragraph-3">status:</p>
+                                        <p class="change-color-span infunction">In function</p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="right-body-upper-container-body-cont-normal-bar-right">
+                                    <div><p>ID:NI B0258</p></div>  
+                                    <div class="right-body-upper-container-body-cont-normal-bar-right-up-icon">
+                                        <a href="#"><img src="images/up-icon.png" class="up-icon" id="btn-3"></a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="right-body-upper-container-body-cont-normal-bar-additional " id="special-cont3" data-position="closed">
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">Drone health</p>
+                                        <div class="additional-inner-cont">
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                    <img src="images/gps.png">
+                                                </div>  
+                                                <p class="right-upper-body-special-paragraph-2"></p>GPS</p>
+                                            </div>
+                                            <div>
+                                                <div class="right-body-upper-container-title-icons-individual-image">
+                                                <img src="images/gps.png">
+                                            </div>
+                                                
+                                                <p class="right-upper-body-special-paragraph-2">WIFI</p>
+                                            </div>
+                                        </div>
+                                </div> 
+                                <div>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">current status</p>
+                                       <div class="additional-inner-cont">
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">5 m/s</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">speed</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">180 m </p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">altitude</p>
+                                            </div>
+                                            <div>
+                                                <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">76%</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">power</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="right-body-bottom">
+                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left1">
+                    <div class="right-body-bottom-container-left-inner-left-cont"><p>All Drones</p></div>
+                    <div class="right-body-bottom-containers-left-inner-right-cont"><p>12</p></div>
+                </div>
+                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left2">
+                    <div>
+                        <div><p class="right-upper-body-special-paragraph-4">Pending</p></div>
+                        <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">status</p></div>
+                    </div>
+                    <div class="right-body-bottom-containers-left-inner-right-cont"><p>3</p></div>
+                </div>  
+                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left3">
+                    <div>
+                        <div><p class="right-upper-body-special-paragraph-4">Accepted</p></div>
+                        <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">status</p></div>
+                    </div>
+                    <div class="right-body-bottom-containers-left-inner-right-cont"><p>9</p></div>
+                </div>  
+                 <div class="right-body-bottom-containers-right">
+                    <div>
+                        <a href="#">
+                            <img src="images/plus.svg" class="right-body-bottom-containers-right-icon" id="zoom-in">
+                        </a>
+                    </div>
+                    <div class="right-body-bottom-containers-right-div">
+                        <a href="#">
+                            <img src="images/minus.svg"class="right-body-bottom-containers-right-icon right-body-bottom-containers-right-icon2" id="zoom-out">
+                        </a>
+                    </div>
+                </div>      
+                </div>
+           
+        
+          </div>
+    </main>
+    <script src="style.js"></script>
+</body>
+
+</html>
