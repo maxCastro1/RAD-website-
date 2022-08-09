@@ -1,3 +1,4 @@
+
 // Initialize and add the map
 var mapInfo;
 
@@ -19,4 +20,5 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
 
