@@ -1,0 +1,41 @@
+ [
+   { 
+    "key":"1",
+    "id": "NI BO255",
+    "pilot":"mo",
+    "type":"DJI SPARK",
+    "speed":"5",
+    "altitude":"180",
+    "power":"26",
+    "attention":"false",
+    "warning":"true"
+
+   },
+   {
+    "key":"2",
+    "id": "NI BO257",
+    "pilot":"mo",
+    "type":"DJI SPARK",
+    "speed":"5",
+    "altitude":"180",
+    "power":"66",
+    "attention":"false",
+    "warning":"false"
+
+   },
+   {
+    "key":"3",
+    "id": "NI BO259",
+    "pilot":"mo",
+    "type":"DJI SPARK",
+    "speed":"80",
+    "altitude":"180",
+    "power":"76",
+    "attention":"false",
+    "warning":"false"
+
+   }
+
+]
+  
+    

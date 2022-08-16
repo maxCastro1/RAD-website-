@@ -102,4 +102,36 @@ const zoomOut = document.getElementById('zoom-out')
 zoomIn.addEventListener('click', () =>mapInfo.setZoom(mapInfo.getZoom() + 1));
 zoomOut.addEventListener('click', () => mapInfo.setZoom(mapInfo.getZoom() - 1));
 }
+export function dynamic(){
+  const droneID = document.getElementsByClassName("droneID")
+const speed= document.getElementsByClassName("speeds")
+const altitude= document.getElementsByClassName("altitudes")
+const power=document.getElementsByClassName("powers")
+const titleDrone=document.getElementsByClassName("right-upper-body-special-paragraph-4")
+const drones=document.getElementsByClassName("numbers-of-drones")
+const status = document.getElementsByClassName("change-color-span")
+const x = fetch('./Data.json')
+  .then(response => response.json())
+  .then((data) => {
 
+    for (let i = 0 ;i < droneID.length ; i++){
+      if (data[i]['warning'] === "true"){
+        status[i].innerHTML="NEED HELP"
+        status[i].style.color="yellow"
+     }
+     else{
+       status[i].innerHTML="In function"
+       status[i].style.color="#1ECD25"
+     }
+      droneID[i].innerHTML = data[i]['id']
+      speed[i].innerHTML = data[i]['speed'] + " m/s"
+      altitude[i].innerHTML = data[i]['altitude'] +" m"
+      power[i].innerHTML = data[i]['power'] + " %"
+      titleDrone[i].innerHTML = "Drone " + [i+1]
+      drones[i].innerHTML=droneID.length
+      
+    }
+
+   })
+  .catch(error => console.log(error));
+}
