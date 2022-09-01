@@ -4,17 +4,19 @@ export function style() {
   const leftMenuItemLeft = document.getElementsByClassName("left-menu-item-left");
   const leftMenuParaagraph = document.getElementsByClassName("left-menu-paraagraph");
   
+  console.log(leftMenuItems)
 
   Array.from(leftMenuItems).forEach((item,i) =>{item.addEventListener("mouseover", () =>{
     leftMenuItemLeft[i].style.background =`linear-gradient(153.48deg, #039DF3 16.64%, rgba(3, 157, 243, 0) 185.59%)`;
     leftMenuItemLeft[i].style.borderRadius = "0px 100px 100px 0px";
       leftMenuParaagraph[i].style.color = "#039DF3";
       
+      
   })});
    Array.from(leftMenuItems).forEach((item,i) =>{item.addEventListener("mouseout", () =>{
     leftMenuItemLeft[i].style.background = "#F9F8FD";
     leftMenuItemLeft[i].style.borderRadius = "0px 100px 100px 0px";
-       leftMenuParaagraph[i].style.color = "#716161";
+       leftMenuParaagraph[i].style.color = "black";
       
    })});
   
