@@ -1,4 +1,5 @@
-import { dynamic, style,zoom } from './style.js';
+import { dynamic,style,zoom,menuButton } from './style.js';
 style();
 zoom();
 dynamic();
+menuButton();

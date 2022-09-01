@@ -49,10 +49,60 @@ body{
 }
 .right-body-main-container-divs-upper{
     display: flex;
+    position: relative;
+    z-index: 1;
 }
+.vetical-more{
+
+    background: transparent;
+    background-image: url("images/more-vertical.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0;
+    margin-left: 3%;
+    z-index: 100;
+    
+}
+.vetical-more:hover{
+
+    border: 2px solid white;
+    background-image: url("images/onhover-more-50.png");
+}
+.menu-pop-up{
+    display: none;
+    width: 70%;
+    position: absolute;
+    z-index: 10;
+    background-color: #F9F8FD;
+    top: 2%;
+    right: 0;
+    border-radius: 0.75rem;
+    font-size: 14px;
+
+}
+.menu-pop-up > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+.menu-pop-up > ul li{
+    margin-left: 0;
+    padding: 0.5rem;
+}
+.menu-pop-up > ul li:hover{
+
+    background: #f9f8fd00;
+    color:#039DF3;
+
+} 
 .right-body-main-container-divs-upper-left-icon-image{
     margin-left: 10%;
     width: 2.5rem;
+    
 }
 .right-body-main-container-divs-upper-left{
     padding: 0.313rem;
@@ -66,9 +116,13 @@ body{
 }
 .right-body-main-container-divs-upper-right{
     margin-left: auto;
-    padding: 0.125rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
 }
 .attention-icon{
+    margin-right: .4rem;
+    width: 1rem;
     display: none;
 }
 #attention-icon-on{
@@ -91,4 +145,12 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
     
+}
+@media all and (max-width: 43rem){
+    #right-body-main-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-bar > ul :nth-child(5){
+        margin-left: auto;
+    }
 }

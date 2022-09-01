@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar" id="nav-bar-id">
         <ul>
+            <button class="nav-menu" id="menu-button"></button>
             <li>
                 <a href="RID.html"><img src="images/logo.svg" alt="logo" id="logo"></a>
             </li>
@@ -19,7 +20,7 @@
                 <a href="RID.html"><p id="text-logo">UAS RID</p></a>
             </li>
             <li id="nav-search-cont">
-                <input type="search" placeholder="search by drone id" id="nav-search">
+                <input type="search" placeholder="Search by drone id" id="nav-search">
             </li>
             <li>
                 <div id="container-nav-notification-icon">
@@ -31,14 +32,14 @@
                 <a href="#"><img src="images/user.svg" alt="user" id="nav-profile-picture"></a>
              </li>   
             <li id="nav-left-username-cont" >
-                <a href="#"><p id="nav-user-name">john peter</p></a>
+                <a href="#"><p id="nav-user-name">John peter</p></a>
             </li>
         </ul>
     </nav>
     <main class="main-container">
    
    
-          <div class="left-menu">
+          <div class="left-menu" id="left-menu-id" >
             <div class="left-menu-upper">
                 <div class="left-menu-items" >
                     <div class="left-menu-item-left">
@@ -120,7 +121,8 @@
             <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2BGC4m3GDW-Qob_DH5D7cK35HgsZn-1c&callback=initMap&v=weekly">
                     </script>
-                <div class="right-body-upper-container">   
+                <div class="right-body-upper-main-container" id="upper-Body-Div"> 
+                <div class="right-body-upper-container" >   
                     <div class="right-body-upper-container-title-icons">
                         <div class="right-body-upper-container-title-icons-individual" >
                             <div class="right-body-upper-container-title-icons-individual-image">
@@ -151,8 +153,8 @@
                                 <img src="images/Ellipse 27.png" class="activity-light">
                                 <p class="right-upper-body-special-paragraph-4">Drone 2</p>
                                 <div class="right-upper-body-special-paragraph-container">
-                                    <p class="right-upper-body-special-paragraph-3">status:</p>
-                                    <p class="change-color-span">need help</p>
+                                    <p class="right-upper-body-special-paragraph-3">Status:</p>
+                                    <p class="change-color-span">Need help</p>
                                 </div>
                                 
                             </div>
@@ -184,19 +186,19 @@
                                         </div>
                                 </div> 
                                 <div>
-                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">current status</p>
+                                    <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2">Current status</p>
                                        <div class="additional-inner-cont">
                                             <div>
                                                 <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3 speeds">5 m/s</p>
-                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">speed</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">Speed</p>
                                             </div>
                                             <div>
                                                 <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3 altitudes">180 m </p>
-                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">altitude</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">Altitude</p>
                                             </div>
                                             <div>
                                                 <p class="right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3 powers">76%</p>
-                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">power</p>
+                                                <p class="right-upper-body-special-paragraph right-upper-body-special-paragraph-2 right-upper-body-special-paragraph-3">Power</p>
                                             </div>
                                         </div>
                                 </div>
@@ -208,7 +210,7 @@
                                     <p class="right-upper-body-special-paragraph-4" >Drone 3</p>
                                     <div class="right-upper-body-special-paragraph-container">
                                         <p class="right-upper-body-special-paragraph-3">Status:</p>
-                                        <p class="change-color-span">need help</p>
+                                        <p class="change-color-span">Need help</p>
                                     </div>
                                     
                                 </div>
@@ -313,25 +315,29 @@
                             </div>
                     </div>
                 </div>
-                <div class="right-body-bottom">
-                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left1">
-                    <div class="right-body-bottom-container-left-inner-left-cont"><p>All Drones</p></div>
-                    <div class="right-body-bottom-containers-left-inner-right-cont"><p class="numbers-of-drones">12</p></div>
+                <div class="right-body-upper-container-left">
+                    <div class="right-body-bottom-containers-left right-body-bottom-containers-left1">
+                        <div class="right-body-bottom-container-left-inner-left-cont"><p>All Drones</p></div>
+                        <div class="right-body-bottom-containers-left-inner-right-cont"><p class="numbers-of-drones">12</p></div>
+                    </div>
+                     <div class="right-body-bottom-containers-left right-body-bottom-containers-left2">
+                        <div>
+                            <div><p class="right-upper-body-special-paragraph-4">Pending</p></div>
+                            <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">Status</p></div>
+                        </div>
+                        <div class="right-body-bottom-containers-left-inner-right-cont"><p>1</p></div>
+                    </div>  
+                     <div class="right-body-bottom-containers-left right-body-bottom-containers-left3">
+                        <div>
+                            <div><p class="right-upper-body-special-paragraph-4">Accepted</p></div>
+                            <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">Status</p></div>
+                        </div>
+                        <div class="right-body-bottom-containers-left-inner-right-cont"><p>2</p></div>
+                    </div>  
                 </div>
-                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left2">
-                    <div>
-                        <div><p class="right-upper-body-special-paragraph-4">Pending</p></div>
-                        <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">Status</p></div>
-                    </div>
-                    <div class="right-body-bottom-containers-left-inner-right-cont"><p>1</p></div>
-                </div>  
-                 <div class="right-body-bottom-containers-left right-body-bottom-containers-left3">
-                    <div>
-                        <div><p class="right-upper-body-special-paragraph-4">Accepted</p></div>
-                        <div><p class="right-upper-body-special-paragraph-3 right-body-bottom-special-paragraph">Status</p></div>
-                    </div>
-                    <div class="right-body-bottom-containers-left-inner-right-cont"><p>2</p></div>
-                </div>  
+                </div>
+                <div class="right-body-bottom">
+                
                  <div class="right-body-bottom-containers-right">
                     <div>
                         <a href="#">
